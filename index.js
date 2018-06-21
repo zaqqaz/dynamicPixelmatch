@@ -1,6 +1,6 @@
-import pixelmatch from "pixelmatch";
+const pixelmatch = require('pixelmatch');
 
-export function dynamicPixelmatch(img1, img2, output, width, height, options, excluded = []) {
+function dynamicPixelmatch(img1, img2, output, width, height, options, excluded = []) {
     const excludedPixelAreas = excluded.map(calculatePixelsFromPercents({ width, height }));
     for (let y = 0; y < height; y++) {
         for (let x = 0; x < width; x++) {
@@ -40,3 +40,5 @@ function calculatePixelsFromPercents({ width, height }) {
         y2: Math.ceil(y2 * height / 100),
     });
 }
+
+module.exports = dynamicPixelmatch;
