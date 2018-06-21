@@ -1,5 +1,5 @@
 {
-  "name": "dynamicPixelmatch",
+  "name": "dynamicpixelmatch",
   "version": "0.0.1",
   "description": "Exclude some areas from image before comparison using pixelmatch",
   "main": "index.js",
