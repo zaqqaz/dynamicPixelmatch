@@ -1,6 +1,6 @@
 {
   "name": "dynamicpixelmatch",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Exclude some areas from image before comparison using pixelmatch",
   "main": "index.js",
   "repository": "https://github.com/zaqqaz/dynamicPixelmatch.git",
